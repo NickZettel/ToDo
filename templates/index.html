@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en" data-bss-forced-theme="light">
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>TaskMaster</title>
+    
+    <!-- Stylesheets -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
@@ -15,100 +20,134 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allison&amp;display=swap">
+    <!-- Font Awesome and Material Icons -->
     <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Brands.css">
     <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Free.css">
+    <link rel="stylesheet" href="assets/css/Material%20Icons.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
-    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
-    <link rel="stylesheet" href="assets/css/Contact-Details-icons.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fonts/fontawesome-all.min.css">
+    <!-- Additional CSS -->
     <link rel="stylesheet" href="assets/css/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/css/Banner-Heading-Image-images.css">
     <link rel="stylesheet" href="assets/css/css/Contact-Details-icons.css">
     <link rel="stylesheet" href="assets/css/css/styles.css">
+    <!-- Avoid duplicate CSS includes -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md" style="color: rgb(142,142,43);padding-right: 31px;margin-top: 39px;background: rgb(238,238,238);box-shadow: 1px -1px 11px 3px rgba(96,96,96,0.44);">
-    <div class="container-fluid"><a class="navbar-brand text-end" href="loginpage.html" style="color: rgb(241,158,56);font-size: 20px;margin-left: 50px;"><strong>Task<span style="color: rgb(142, 142, 61);">Master</span></strong></a>
-        <ul class="navbar-nav ms-auto"></ul><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-    </div>
-</nav>
-<div style="backdrop-filter: opacity(1);-webkit-backdrop-filter: opacity(1);">
-    <section id="sectionpromo" class="py-4 py-xl-5">
-        <div class="container" style="width: 1330px;">
-            <div class="bg-dark border rounded border-0 border-dark overflow-hidden" id="promobckgr">
-                <div class="row g-0" style="box-shadow: 0px 0px 0px;">
-                    <div class="col-md-6 col-xl-6 my-auto pe-0" id="promobckground" style="background: rgb(142,142,0);">
-                        <div class="text-white p-4 p-md-5 pb-0 pt-4 mb-0 ms-0 pe-5 me-0">
-                            <h2 class="fw-bold text-black mb-3" style="text-shadow: 0px 0px;">Task Master</h2>
-                            <p class="text-black pb-0 mb-0" style="--bs-body-font-size: 1rem;font-size: 16px;">Great tool for staying organized, focused, and on top of your tasks. Manage personal projects or collaborate with your team seamlessly.</p>
-                            <div class="text-center my-3" id="loginpro"><a class="btn" role="button" id="butpro" href="loginpage.html" style="background: #e7e1e1;border-radius: 13px;color: var(--bs-btn-active-color);width: 71.5px;box-shadow: 0px 0px 5px 2px #915409;margin-right: 17px;padding-top: 6px;"><span style="color: rgb(142, 142, 82);">LogIn</span></a><a class="btn" role="button" id="butpro-1" href="signup.html" style="background: #8e8e3d;border-radius: 13px;color: var(--bs-btn-active-color);width: 71.5px;box-shadow: 0px 0px 5px 2px #915409;">Signup</a></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md" style="color:rgb(142,142,43);padding-right:31px;margin-top:39px;background:rgb(238,238,238);box-shadow:1px -1px 11px 3px rgba(96,96,96,0.44);">
+        <div class="container-fluid">
+            <!-- Brand Name -->
+            <a class="navbar-brand text-end" href="loginpage.html" style="color:rgb(241,158,56);font-size:20px;margin-left:50px;">
+                <strong>Task</strong><span style="color:rgb(142, 142, 61);">Master</span>
+            </a>
+            <!-- Toggler for mobile view -->
+            <ul class="navbar-nav ms-auto"></ul>
+            <button class="navbar-toggler" data-bs-toggle="collapse">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Promotional Section -->
+    <div style="backdrop-filter: opacity(1);-webkit-backdrop-filter: opacity(1);">
+        <section id="sectionpromo" class="py-4 py-xl-5">
+            <div class="container" style="width:1330px;">
+                <div class="bg-dark border-0 border-dark border rounded overflow-hidden" id="promobckgr">
+                    <div class="row g-0" style="box-shadow:0px 0px 0px;">
+                        <!-- Left Side: Promo Content -->
+                        <div class="col-md-6 col-xl-6 my-auto pe-0" id="promobckground" style="background:rgb(142,142,0);">
+                            <div class="text-white p-4 p-md-5 pb-0 pt-4 mb-0 ms-0 pe-5 me-0">
+                                <h2 class="fw-bold text-black mb-3" style="text-shadow:0px 0px;">Task Master</h2>
+                                <p class="text-black pb-0 mb-0" style="--bs-body-font-size:1rem;font-size:16px;">
+                                    Great tool for staying organized, focused, and on top of your tasks. Manage personal projects or collaborate with your team seamlessly.
+                                </p>
+                                <!-- Login and Signup Buttons -->
+                                <div class="text-center my-3" id="loginpro">
+                                    <a class="btn" role="button" id="butpro" href="loginpage.html" style="background: #e7e1e1; border-radius: 13px; color: var(--bs-btn-active-color); width: 71.5px; box-shadow: 0px 0px 5px 2px #915409; margin-right: 17px; padding-top: 6px;">
+                                        <span style="color: rgb(142, 142, 82);">LogIn</span>
+                                    </a>
+                                    <a class="btn" role="button" id="butpro-1" href="signup.html" style="background: #8e8e3d; border-radius: 13px; color: var(--bs-btn-active-color); width: 71.5px; box-shadow: 0px 0px 5px 2px #915409;">
+                                        Signup
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Side: Promo Image -->
+                        <div class="col-md-6 order-first order-md-last" style="min-height:250px;">
+                            <img class="w-100 h-100 fit-cover ms-0" src="assets/img/mnerva%20final4.jpg" width="558" height="370">
                         </div>
                     </div>
-                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover ms-0" src="assets/img/mnerva%20final4.jpg" width="558" height="370"></div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
-<div class="container">
-    <h1 class="text-center" id="h1bckgr" style="font-family: cursive;"><span style="color: rgb(0, 0, 0);">Welcome to</span><span style="color: rgb(142, 142, 73);"> </span><span style="color: rgb(241, 158, 56);">Task</span><span style="color: rgb(142, 142, 73);">Master</span></h1>
-</div>
-<p id="welcome">TaskMaster is your ultimate productivity companion, designed<br> to help you stay organized, focused, and on top of your tasks. Whether you're<br> managing personal projects or collaborating with a team, <strong><span style="color: rgb(241, 158, 56);">Task</span><span style="color: rgb(142, 142, 73);">Master</span> </strong>provides a<br> seamless and intuitive experience to streamline your workflow.<br><br></p>
-<div class="container" style="padding-bottom: 8px;padding-left: 0px;padding-right: 0px;">
-    <div class="row d-xxl-flex justify-content-xxl-center" style="background: rgba(255,153,0,0);width: 1330px;padding-left: 0px;padding-bottom: 0px;">
-        <div class="col-4 text-center col" id="colpad" style="background: rgb(239,239,239);border-radius: 25px;padding-top: 18px;margin: 7px;width: 427.7px;padding-bottom: 18px;padding-right: 18px;padding-left: 18px;"><i class="fas fa-fingerprint text-center" style="font-size: 31px;border-color: rgba(255,153,0,0);color: rgb(142,142,61);"></i>
-            <h3 class="text-center" id="headingdown" style="margin-top: 0px;font-family: cursive;--bs-body-font-size: 1rem;font-size: 20px;margin-bottom: 10px;"><strong>Features</strong></h3>
-            <p><span style="color: rgb(142, 142, 61);">TaskMaster is packed with powerful features to enhance your productivity. Enjoy task management, calendar integration, reminders, and collaboration tools. Stay on top of your tasks with priority settings and due date tracking. Our intuitive interface ensures you can manage your workload effortlessly.</span></p>
-        </div>
-        <div class="col text-center col-4" id="colpad2" style="border-radius: 25px;background: rgba(142,142,61,0.6);margin: 7px;width: 427.7px;padding-top: 18px;padding-bottom: 18px;padding-right: 18px;padding-left: 18px;box-shadow: -5px -1px 12px 3px rgba(137,137,137,0.2);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-brightness-low-fill text-center" style="font-size: 39px;color: #ffffff;width: 36px;">
-            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707"></path>
-        </svg>
-            <h3 class="text-center" id="headingdown-1" style="font-family: cursive;--bs-body-font-size: 1rem;font-size: 20px;color: rgb(6,6,6);"><strong>Benefits</strong></h3>
-            <p><span style="color: rgb(255, 252, 252);">Experience the benefits of using TaskMaster. Improve your efficiency with streamlined task tracking, reduce stress with organized workflows, and achieve more with focused productivity. Whether you're a solo user or part of a team, TaskMaster helps you stay organized and productive.</span></p>
-        </div>
-        <div class="col-4 text-center col" id="colpad3" style="background: rgb(239,239,239);border-radius: 25px;padding-top: 18px;margin: 7px;width: 427.7px;padding-bottom: 18px;padding-right: 18px;padding-left: 18px;"><i class="material-icons text-center" style="font-size: 36px;color: rgb(142,142,82);">directions_run</i>
-            <h3 class="text-center" id="headingdown-2" style="font-family: cursive;--bs-body-font-size: 1rem;font-size: 20px;padding-top: 0px;margin-top: 0px;margin-bottom: 4px;"><strong>Get Started</strong></h3>
-            <p><span style="color: rgb(142, 142, 82);">Getting started with TaskMaster is easy. Sign up in minutes and begin organizing your tasks. Access our comprehensive help guides and support to make the most of our features. Join thousands of users who trust TaskMaster to manage their productivity and achieve their goals.</span></p>
-        </div>
+        </section>
     </div>
-</div>
-<div class="container">
-    <div class="row" style="background: rgb(255,255,255);">
-        <div class="col">
-            <footer class="text-center">
-                <div class="container text-muted py-4 py-lg-5" style="padding: 47px 3px;">
-                    <ul class="list-inline">
-                        <li class="list-inline-item me-4"><a class="link-secondary" href="#" style="color: #804141;"><span style="color: rgb(255, 153, 0);">User </span><span style="color: rgb(122, 91, 17);">Manual</span></a></li>
-                        <li class="list-inline-item me-4" style="color: #804141;"><a class="link-secondary" href="#" style="color: #804141;"><span style="color: rgb(112, 91, 10);">Contact </span><span style="color: rgb(255, 153, 0);">Us</span></a></li>
-                        <li class="list-inline-item"></li>
-                    </ul>
-                    <ul class="list-inline">
-                        <li class="list-inline-item me-4"><a href="https://www.facebook.com/landscape.picturesw/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook" style="color: #747473;">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
-                        </svg></a></li>
-                        <li class="list-inline-item me-4"><a href="https://x.com/socialmedia2day"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x" style="color: #747473;">
-                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
-                        </svg></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/landscapes/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="color: #747473;">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
-                        </svg></a></li>
-                    </ul>
-                    <p class="mb-0"><span style="color: rgb(48, 52, 56);">Copyright </span><span style="color: rgb(142, 142, 61);">© 2024 CST-8319</span></p>
-                </div>
-            </footer>
-        </div>
-    </div>
-</div>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
 
+    <!-- Welcome Message -->
+    <div class="container">
+        <h1 class="text-center" id="h1bckgr" style="font-family:cursive;">
+            <span style="color:rgb(0, 0, 0);">Welcome to</span>
+            <span style="color:rgb(241, 158, 56);">Task</span>
+            <span style="color:rgb(142, 142, 73);">Master</span>
+        </h1>
+    </div>
+    <p id="welcome">
+        TaskMaster is your ultimate productivity companion, designed<br>
+        to help you stay organized, focused, and on top of your tasks. Whether you're<br>
+        managing personal projects or collaborating with a team, <span style="color:rgb(241, 158, 56);">Task</span>
+        <span style="color:rgb(142, 142, 73);">Master</span> provides a<br>
+        seamless and intuitive experience to streamline your workflow.<br><br>
+    </p>
+
+    <!-- Features, Benefits, and Getting Started Sections -->
+    <div class="container" style="padding-bottom:8px;padding-left:0px;padding-right:0px;">
+        <div class="row d-xxl-flex justify-content-xxl-center" style="background:rgba(255,153,0,0);width:1330px;padding-left:0px;padding-bottom:0px;">
+            <!-- Features -->
+            <div class="col-4 text-center" id="colpad" style="background:rgb(239,239,239);border-radius:25px;padding-top:18px;margin:7px;width:427.7px;padding-bottom:18px;padding-right:18px;padding-left:18px;">
+                <i class="fas fa-fingerprint text-center" style="font-size:31px;border-color:rgba(255,153,0,0);color:rgb(142,142,61);"></i>
+                <h3 class="text-center" id="headingdown" style="margin-top:0px;font-family:cursive;--bs-body-font-size:1rem;font-size:20px;margin-bottom:10px;">
+                    <strong>Features</strong>
+                </h3>
+                <p>
+                    <span style="color:rgb(142, 142, 61);">TaskMaster is packed with powerful features to enhance your productivity. Enjoy task management, calendar integration, reminders, and collaboration tools. Stay on top of your tasks with priority settings and due date tracking. Our intuitive interface ensures you can manage your workload effortlessly.</span>
+                </p>
+            </div>
+            <!-- Benefits -->
+            <div class="col-4 text-center" id="colpad2" style="border-radius:25px;background:rgba(142,142,61,0.6);margin:7px;width:427.7px;padding-top:18px;padding-bottom:18px;padding-right:18px;padding-left:18px;">
+                <i class="fas fa-thumbs-up text-center" style="font-size:31px;color:#d1d1d1;"></i>
+                <h3 class="text-center" id="headingdown" style="margin-top:0px;font-family:cursive;--bs-body-font-size:1rem;font-size:20px;margin-bottom:10px;">
+                    <strong>Benefits</strong>
+                </h3>
+                <p>
+                    <span style="color:#d1d1d1;">With TaskMaster, you'll experience a boost in productivity and organization. The streamlined interface and powerful tools help you manage your time better, collaborate effectively with your team, and achieve your goals with ease. Enjoy a more organized and stress-free workflow.</span>
+                </p>
+            </div>
+            <!-- Getting Started -->
+            <div class="col-4 text-center" id="colpad3" style="background:rgb(239,239,239);border-radius:25px;margin:7px;width:427.7px;padding-top:18px;padding-bottom:18px;padding-right:18px;padding-left:18px;">
+                <i class="fas fa-play-circle text-center" style="font-size:31px;color:rgb(142,142,61);"></i>
+                <h3 class="text-center" id="headingdown" style="margin-top:0px;font-family:cursive;--bs-body-font-size:1rem;font-size:20px;margin-bottom:10px;">
+                    <strong>Getting Started</strong>
+                </h3>
+                <p>
+                    <span style="color:rgb(142, 142, 61);">Getting started with TaskMaster is simple. Sign up for an account, set up your tasks and projects, and start exploring the features. Our intuitive onboarding process will guide you through the essential steps to get you up and running quickly. Start enhancing your productivity today!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container text-center">
+            <p class="text-muted">
+                &copy; 2024 TaskMaster. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>

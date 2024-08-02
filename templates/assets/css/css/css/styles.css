@@ -69,22 +69,6 @@ section {
 #colpad {
   padding-top: 25px;
   background: #ffffff;
-  background: url(;
-}
-
-h3 {
-  align-content: center;
-}
-
-h3 {
-  align-content: center;
-}
-
-.h3prom {
-}
-
-#h3pro {
-  color: var(--bs-link-hover-color);
 }
 
 .btnaddcat {
@@ -243,5 +227,8 @@ a {
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
+}
+
+.navbar {
 }
 
