@@ -9,7 +9,7 @@ Backend Developer: Xuemin Z
 
 
 The project is a web app which allows a user to create an account, sign in, and view/add/delete/modify tasks. 
-The app was made using Flask. The frontend uses Bootstrap.
+The app was made using Flask. The frontend was made using Bootstrap.
 
 Requires:
 python (https://www.python.org/downloads/)
