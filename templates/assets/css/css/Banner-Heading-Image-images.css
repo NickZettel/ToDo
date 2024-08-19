@@ -1,0 +1,23 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+#textdown {
+}
+
+#textdown.text-bg-light {
+  color: var(--bs-form-invalid-border-color);
+}
+
+.welcomepara {
+}
+
+input {
+}
+
+input {
+}
+
+input {
+}
+

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" data-bss-forced-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Today Master</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Brands.css">
+    <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Free.css">
+    <link rel="stylesheet" href="assets/css/Material%20Icons.css">
+    <link rel="stylesheet" href="assets/css/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="assets/css/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/css/Contact-Details-icons.css">
+    <link rel="stylesheet" href="assets/css/css/styles.css">
+    <link rel="stylesheet" href="assets/css/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/fonts/material-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ADLaM+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allison&amp;display=swap">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body style="background:var(--bs-secondary-bg-subtle);">
+
+	<!-- Logout Button -->
+    <form action="/logout" method="get">
+        <button type="submit" style="background: rgba(100, 102, 52, 0); border-radius: 12px; margin-left: 10px; color: #ff9900; margin-right: 10px; min-width: 87px; width: 83px; border-width: 1px; border-color: rgb(255, 153, 0); margin-top: 6px;">
+            Log<span style="color: rgb(142, 142, 61);">out</span>
+        </button>
+    </form>
+
+    <div id="myModal" class="modal ">
+        <div class="modal-content" style="background-color: rgba(249,224,192,0.59); margin: 15% auto; padding: 20px; border: 1px solid #888; width: 500px; height: 250px; border-radius: 10px;">
+            <span class="close">&times;</span>
+            <h4>Today's Reminders</h4>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+	<!-- Title Section -->
+	<div style="padding-top:11px;background:rgba(255,255,255,0);">
+		<p class="fs-5" style="background:rgba(255,255,255,0);">
+			<span style="color:rgb(241, 167, 76);">TaskMaster App</span>
+		</p>
+	</div>
+	
+	<!-- Navbar Section -->
+    <nav class="navbar navbar-expand-md bg-body" style="color: rgb(142,142,43);height: 53px;">
+		<div class="container-fluid">
+			<!-- Brand Link -->
+			<a class="navbar-brand text-end" href="loginpage.html" style="color:rgb(241,158,56);">
+				<strong>TaskMaster</strong>
+			</a>
+			<!-- Collapsible Navbar Content -->
+			<div class="collapse navbar-collapse d-xl-flex d-xxl-flex ms-0 ps-0" id="navcol-2">
+				<ul class="navbar-nav" style="margin-left:-14px;">
+					<!-- Home Icon Link -->
+					<li class="nav-item" id="homeicon">
+						<a class="nav-link active" href="index.html" style="color:#f1a74c;">
+							<!-- Home Icon SVG -->
+							<svg fill="none" height="1em" style="font-size:23px;width:30px;color:rgb(142,142,89);" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 8.77217L14.0208 1.79299C12.8492 0.621414 10.9497 0.621413 9.77817 1.79299L3 8.57116V23.0858H10V17.0858C10 15.9812 10.8954 15.0858 12 15.0858C13.1046 15.0858 14 15.9812 14 17.0858V23.0858H21V8.77217ZM11.1924 3.2072L5 9.39959V21.0858H8V17.0858C8 14.8767 9.79086 13.0858 12 13.0858C14.2091 13.0858 16 14.8767 16 17.0858V21.0858H19V9.6006L12.6066 3.2072C12.2161 2.81668 11.5829 2.81668 11.1924 3.2072Z" fill="currentColor" fill-rule="evenodd"></path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+    <!-- Container for the Task List -->
+	<div class="container" style="background: rgba(255,255,255,0.41);padding-bottom: 13px;border-radius: 35px;width: 1140px;height: 787px;margin-bottom: 22px;box-shadow: 2px 2px 20px 1px rgb(195,195,195);margin-top: 85px;padding-top: 1px;">
+
+		<!-- Header Section with Title and Logo -->
+		<div style="text-align:center;">
+			<h1 class="mt-4" style="text-align:center;color:rgb(241,158,56);font-family:ABeeZee, sans-serif;font-size:31px;margin-top:0px;">
+				Task List
+			</h1>
+			<img src="assets/img/logo.gif" width="214" height="209" style="text-align:left;">
+		</div>
+
+		<!-- Button Section for Task Management -->
+		<div class="d-flex justify-content-between justify-content-xl-center align-items-xl-center mb-2" style="padding-right: 0px;transform: translate(134px);margin-bottom: 18px;padding-bottom: 21px;">
+			
+			<!-- Form for Marking Tasks as Complete (hidden) -->
+			<form id="completeTaskForm" action="/mark_complete" method="POST" style="display: none;">
+				<input type="hidden" id="complete_task_id_form" name="complete_task_id">
+			</form>
+
+			<!-- Button Controls -->
+			<div class="d-xl-flex" style="padding-right: 0px; transform: translate(-84px);">
+				
+				<!-- Button to Complete Tasks -->
+				<button class="btn btn-primary" style="background: #646634; border-radius: 12px; margin-left: 0px; color: #ff9900; margin-right: 10px; border-width: 0px; border-color: rgba(255,255,255,0); min-width: 134px; width: 136px; max-height:36px" onclick="completeTasks()">
+					Complete
+				</button>
+				
+				<!-- Button to Delete Task (opens modal) -->
+				<button class="btn btn-success" style="background: #646634; border-radius: 12px; margin-left: 0px; color: #ff9900; margin-right: 10px; border-width: 0px; border-color: rgba(255,255,255,0); min-width: 134px;" data-bs-target="#deleteTaskModal" data-bs-toggle="modal">
+					Delete Task
+				</button>
+				
+				<!-- Button to See Reminders -->
+				<button id="seeRemindersBtn" class="btn btn-info" role="button" style="background: #646634; border-radius: 12px; margin-left: 0px; color: #ff9900; margin-right: 10px; border-width: 0px; border-color: rgba(255,255,255,0); min-width: 134px;">
+					See Reminders
+				</button>
+				
+				<!-- Button to Add Task (opens modal) -->
+				<button class="btn btn-success" data-toggle="modal" data-target="#addTaskModal" style="background: #646634; border-radius: 12px; border-width: 0px; transform: translate(-98px); box-shadow: 1px 1px 4px rgba(139,139,139,0.86); margin-right: 0px; margin-left: 96px; min-width: 134px;max-height: 36px">
+					<span style="color: rgb(241, 158, 56); border-width: 0px; min-width: 134px;">Add Task</span>
+				</button>
+
+				<!-- Dropdown for Sorting Tasks by Category -->
+				<label for="categoryDropdown" style="margin-right: 9px; padding-top: 5px; margin-left: 0px; height: 25px; text-align: center;">
+					<span style="color: rgb(229, 162, 78);">Sort by category</span>
+				</label>
+
+				<select id="categoryDropdown" name="category" onchange="sortByCategory()" style="border-radius: 10px; color: darkolivegreen; background: #ffe0b3; text-align: center; max-height: 36px; width: 134px;">
+					<option value="" disabled selected>Select</option>
+					{% for category in categories %}
+					<option value="{{ category }}">{{ category }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+
+		<!-- Table for Displaying Tasks -->
+		<div style="border-radius:0px;border-width:0px;">
+			<div>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<!-- Table Headers -->
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Select</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Task Name</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Description</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Due Date</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;width:180px;">
+								<span style="font-weight: normal !important;">Status</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Category</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Reminder</span>
+							</th>
+							<th style="text-align:center;color:rgb(245,225,196);background:rgb(99,102,43);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<span style="font-weight: normal !important;">Action</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Loop through tasks and display each one in a row -->
+						{% for task in tasks %}
+						<tr>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<!-- Checkbox for task selection -->
+								<input type="checkbox" name="task_id[]" value="{{ task[0] }}">
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;font-size:13px;">
+								{{ task[1] }}
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;width:224.1px;font-size:13px;">
+								{{ task[2] }}
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;font-size:13px;">
+								{{ task[3] }}
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;font-size:13px;height:103.5px;">
+								<!-- Display status based on task completion -->
+								{{ 'Complete' if task[4] == 0 else 'In progress' }}<br><br><br>
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;font-size:13px;">
+								{{ task[5] }}
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;font-size:13px;width:170.6px;">
+								{{ task[6] }}
+							</td>
+							<td style="text-align:center;background:rgb(249,224,192);border-radius:0px;border-width:1px;border-color:#ffffff;">
+								<div>
+									<!-- Button to edit the task (opens modal) -->
+									<button class="btn btn-secondary btn-sm" data-target="#editTaskModal" data-task="{{ task | tojson | safe}}" data-toggle="modal" style="background: rgb(241,158,56);width: 112px;border-width: 0px;margin-top: 6px;" type="button" data-bs-target="#editTaskModal" data-bs-toggle="modal">
+										Edit Task
+									</button>
+								</div>
+							</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+		<!-- Modal for Editing a Task -->
+	<div class="modal fade" role="dialog" tabindex="-1" id="editTaskModal" aria-labelledby="editTaskModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header" style="height: 50px;background: #8e8e3d;">
+					<h5 class="modal-title" id="editTaskModalLabel" style="color: rgb(253,245,223);">Edit Task</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body" style="width:501px;background:rgba(255,193,7,0.17);">
+					<form action="/edit" id="editTaskForm" method="post">
+						<!-- Hidden field for task ID -->
+						<input type="hidden" id="task_id" name="task_id">
+
+						<!-- Task Name Input -->
+						<div class="form-group">
+							<label class="form-label" for="task_name" style="margin-left:11px;">Task Name</label>
+							<input class="form-control form-control" type="text" id="task_name" name="task_name" required="" style="border-radius:13px;background:rgba(255,255,255,0.47);width:330px;">
+						</div>
+
+						<!-- Category Input -->
+						<div class="form-group">
+							<label class="form-label" for="category" style="margin-left:11px;">Category</label>
+							<input class="form-control form-control" type="text" id="category" name="category" required="" style="border-radius:13px;background:rgba(255,255,255,0.47);width:330px;">
+						</div>
+
+						<!-- Due Date Input -->
+						<div class="form-group">
+							<label class="form-label" for="due" style="margin-left:11px;">Due</label>
+							<input class="form-control form-control" id="due" name="due" required="" style="border-radius:13px;background:rgba(255,255,255,0.47);width:250px;" type="date">
+						</div>
+
+						<!-- Description Input -->
+						<div class="form-group">
+							<label class="form-label" for="description" style="margin-left:11px;">Description</label>
+							<input class="form-control form-control" type="text" id="description" name="description" required="" style="border-radius:13px;background:rgba(255,255,255,0.47);">
+						</div>
+
+						<!-- Reminder Input -->
+						<div class="form-group">
+							<label class="form-label" for="reminder" style="margin-left:11px;">Reminder</label>
+							<input class="form-control form-control" id="reminder" name="reminder" style="border-radius:13px;background:rgba(255,255,255,0.47);width:250px;" type="date">
+						</div>
+
+						<!-- Submit and Cancel Buttons -->
+						<button class="btn btn-primary" style="background: #8e8e3d;width: 80px;border-width: 0px;border-color: rgb(253,245,223);color: rgb(253,245,223);" type="submit">Submit</button>
+						<button class="btn btn-secondary" data-dismiss="modal" style="backdrop-filter: opacity(1);-webkit-backdrop-filter: opacity(1);margin-left: 5px;width: 80px;background: #ff9900;border-width: 0px;" type="button">Cancel</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for Adding a Task -->
+	<div class="modal fade" role="dialog" tabindex="-1" id="addTaskModal" aria-labelledby="addTaskModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header" style="background: #8e8e3d;height: 50px;">
+					<h5 class="modal-title" id="addTaskModalLabel" style="color: rgb(249,237,220);">Add Task</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body" style="background:rgba(249,224,192,0.59);height:518px;">
+					<form action="/add_task" id="addTaskForm" method="post">
+						<!-- Task Name Input -->
+						<div class="form-group">
+							<label class="form-label" for="taskTitle" style="margin-left:15px;">Task Name</label>
+							<input class="form-control form-control form-control" type="text" id="taskTitle" name="task_name" required="" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;">
+						</div>
+
+						<!-- Category Input -->
+						<div class="form-group" style="border-width:0px;">
+							<label class="form-label" for="taskCategory" style="border-width:0px;margin-left:15px;">Category</label>
+							<input class="form-control form-control form-control" id="taskCategory" name="category" required="" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;">
+						</div>
+
+						<!-- Due Date Input -->
+						<div class="form-group" style="border-width:0px;">
+							<label class="form-label" for="dueDate" style="border-width:0px;margin-left:15px;">Due</label>
+							<input class="form-control form-control form-control" id="dueDate" name="due" required="" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;width:276px;" type="date">
+						</div>
+
+						<!-- Description Input -->
+						<div class="form-group" style="border-width:0px;">
+							<label class="form-label" for="description" style="border-width:0px;margin-left:15px;">Description</label>
+							<input class="form-control form-control form-control" type="text" id="description" name="description" required="" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;">
+						</div>
+
+						<!-- Reminder Input -->
+						<div class="form-group" style="border-width:0px;">
+							<label class="form-label" for="reminderDate" style="border-width:0px;margin-left:15px;">Reminder</label>
+							<input class="form-control form-control form-control" id="reminderDate" name="reminder" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;width:276px;" type="date">
+						</div>
+
+						<!-- Submit and Cancel Buttons -->
+						<button class="btn btn-primary" style="background: #8e8e3d;border-width: 0px;width: 80px;color: rgb(249,237,220);" type="submit">Submit</button>
+						<button class="btn btn-secondary" data-bs-dismiss="modal" style="margin-left: 5px;border-width: 0px;background: #ff9900;width: 80px;" type="button">Cancel</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for Adding a Category -->
+	<div class="modal fade" role="dialog" tabindex="-1" id="addCategoryModal" aria-labelledby="addTaskModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header" style="background: #8e8e3d;height: 41px;">
+					<h5 class="modal-title" id="addTaskModalLabel-1" style="color: rgb(249,237,220);">Add Category</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body" style="background: rgba(249,224,192,0.59);height: 175px;">
+					<form action="/add_task" id="addTaskForm-1" method="post">
+						<!-- Category Name Input -->
+						<div class="form-group" style="border-width:0px;">
+							<label class="form-label" for="taskCategory" style="border-width:0px;margin-left:15px;">Category Name</label>
+							<input class="form-control form-control form-control" type="text" id="taskCategory-1" name="category" required="" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;">
+						</div>
+
+						<!-- Submit and Cancel Buttons -->
+						<button class="btn btn-primary" style="background: #8e8e3d;color: rgb(255,255,255);border-width: 0px;margin-top: 12px;width: 80px;" type="submit">Submit</button>
+						<button class="btn btn-secondary" data-bs-dismiss="modal" data-dismiss="modal" style="margin-left: 5px;background: #ff9900;border-width: 0px;margin-top: 12px;width: 80px;" type="button">Cancel</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for Editing a Category -->
+	<div class="modal fade" role="dialog" tabindex="-1" id="editCategoryModal" aria-labelledby="addTaskModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header" style="background: #8e8e3d;height: 41px;">
+					<h5 class="modal-title" id="addTaskModalLabel-2" style="color: rgb(249,237,220);">Edit Category</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body" style="background: rgba(249,224,192,0.59);height: 175px;">
+					<form action="/add_task" id="addTaskForm-2" method="post">
+						<!-- Edit Category Name Input -->
+						<div class="form-group" style="border-width:0px;">
+							<label class="form-label" for="taskCategory" style="border-width: 0 px;margin-left: 8px;">Edit Category Name</label>
+							<input class="form-control form-control form-control" type="text" id="taskCategory-2" name="category" required="" style="background:rgba(255,255,255,0.62);border-radius:16px;border-width:0px;">
+						</div>
+
+						<!-- Submit and Cancel Buttons -->
+						<button class="btn btn-primary" style="background: #8e8e3d;color: rgb(255,255,255);border-width: 0px;margin-top: 12px;width: 80px;" type="submit">Submit</button>
+						<button class="btn btn-secondary" data-bs-dismiss="modal" data-dismiss="modal" style="margin-left: 5px;background: #ff9900;border-width: 0px;margin-top: 12px;width: 80px;" type="button">Cancel</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for Deleting a Task -->
+	<div class="modal fade" role="dialog" tabindex="-1" id="deleteTaskModal" aria-labelledby="deleteTaskModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- Modal Body -->
+				<div class="modal-body" style="background: rgba(249, 224, 192, 0.59); height: 145px;">
+					<form action="/delete" id="deleteTaskForm" method="post" onsubmit="logFormData(event)">
+						<!-- Hidden field for task ID -->
+						<input type="hidden" id="delete_task_id" name="task_id">
+
+						<!-- Confirmation Message -->
+						<div class="form-group">
+							<label class="form-label">
+								<span style="color: rgb(255, 24, 0);">Are you sure that you want to delete selected tasks?</span>
+							</label>
+						</div>
+
+						<!-- Confirm and Cancel Buttons -->
+						<button class="btn btn-primary" id="confirmDelete" style="border-width: 0px; background: #ff0f00;" onclick="updateDeleteTaskIds(); document.getElementById('deleteTaskForm').submit();" type="button">Delete</button>
+						<button class="btn btn-secondary" data-bs-dismiss="modal" style="margin-left: 5px;" type="button">Cancel</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		// Function to sort tasks by selected category
+		function sortByCategory() {
+			var category = document.getElementById("categoryDropdown").value;
+			if (category) {
+				window.location.href = "/sort_by?category=" + encodeURIComponent(category); // Redirect to sorting URL
+			}
+		}
+	</script>
+
+	<script>
+		// Function to close the Edit Task Modal and remove the backdrop
+		function closeModal() {
+			$('#editTaskModal').modal('hide'); // Hide the modal
+			$('.modal-backdrop').remove(); // Remove the backdrop
+		}
+
+		// Event handler for the X button or close button within the modal
+		$('#editTaskModal .close, #editTaskModal .btn-secondary').click(function() {
+			closeModal();
+		});
+
+		// Event handler for backdrop click (if applicable)
+		$('#editTaskModal').on('hidden.bs.modal', function (e) {
+			$('.modal-backdrop').remove(); // Remove the backdrop after the modal is hidden
+		});
+	</script>
+
+	<script>
+		// Function to update the delete task IDs
+		function updateDeleteTaskIds() {
+			var checkedIds = [];
+			var checkboxes = document.querySelectorAll('input[type="checkbox"][name="task_id[]"]:checked');
+
+			checkboxes.forEach(function(checkbox) {
+				checkedIds.push(checkbox.value); // Collect all checked IDs
+			});
+
+			document.getElementById('delete_task_id').value = checkedIds.join(','); // Store IDs as a comma-separated list
+		}
+
+		// Function to log form data before submission
+		function logFormData(event) {
+			event.preventDefault(); // Prevent the default form submission
+
+			var taskIdsInput = document.getElementById('delete_task_id');
+			if (taskIdsInput) {
+				var taskIds = taskIdsInput.value;
+				console.log('Value of delete_task_id:', taskIds); // Log the task IDs
+
+				if (taskIds.trim() === '') {
+					console.log('Error: delete_task_id value is empty.');
+				} else {
+					console.log('Deleting task IDs:', taskIds);
+					// Optionally submit the form programmatically after logging
+					// document.getElementById('deleteTaskForm').submit();
+				}
+			} else {
+				console.log('Error: delete_task_id element not found.');
+			}
+		}
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			// Pass task data to the Edit Task Modal
+			$('#editTaskModal').on('show.bs.modal', function(event) {
+				var button = $(event.relatedTarget); // Button that triggered the modal
+				var row = button.closest('tr'); // Find the closest row to the button
+
+				// Extract data from the row
+				var task_id = row.find('input[name="task_id[]"]').val(); // Task ID
+				var task_name = row.find('td:eq(1)').text().trim(); // Task Name
+				var description = row.find('td:eq(2)').text().trim(); // Task Description
+				var due_date = row.find('td:eq(3)').text().trim(); // Due Date
+				var category = row.find('td:eq(5)').text().trim(); // Category
+				var reminder = row.find('td:eq(6)').text().trim(); // Reminder
+
+				// Populate the form fields with task data
+				var modal = $(this);
+				modal.find('#task_id').val(task_id);
+				modal.find('#task_name').val(task_name);
+				modal.find('#description').val(description);
+				modal.find('#due').val(due_date);
+				modal.find('#category').val(category);
+				modal.find('#reminder').val(reminder);
+			});
+
+			// Pass task data to the Delete Task Modal
+			function setTaskIdToDelete() {
+				var selectedTasks = document.querySelectorAll('input[name="task_id[]"]:checked');
+				if (selectedTasks.length > 0) {
+					var taskIds = [];
+					selectedTasks.forEach(function(task) {
+						taskIds.push(task.value); // Collect all selected task IDs
+					});
+					document.getElementById('delete_task_id').value = taskIds.join(','); // Store as comma-separated list
+				} else {
+					alert('Please select at least one task to delete.'); // Alert if no tasks are selected
+				}
+			}
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			console.log('jQuery version:', $.fn.jquery); // Log the version of jQuery being used
+			// Test jQuery functionality here
+		});
+	</script>
+
+	<script>
+		// Function to complete tasks
+		function completeTasks() {
+			var checkedIds = [];
+			var checkboxes = document.querySelectorAll('input[type="checkbox"][name="task_id[]"]:checked');
+
+			// Clear any previous hidden inputs
+			var form = document.getElementById('completeTaskForm');
+			form.innerHTML = '';
+
+			// Create hidden inputs for each checked ID
+			checkboxes.forEach(function(checkbox) {
+				var input = document.createElement('input');
+				input.type = 'hidden';
+				input.name = 'task_id';
+				input.value = checkbox.value;
+				form.appendChild(input);
+			});
+
+			// Submit the form
+			form.submit();
+		}
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const seeRemindersBtn = document.getElementById('seeRemindersBtn');
+
+			seeRemindersBtn.addEventListener('click', function() {
+				fetch('/see_reminders', {
+					method: 'GET',
+					credentials: 'same-origin'  // Include cookies
+				})
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('Network response was not ok');
+					}
+					return response.json();
+				})
+				.then(data => {
+					console.log('Data received:', data);
+					// Reload the page to update the modal display
+					window.location.reload();
+				})
+				.catch(error => {
+					console.error('Error fetching data:', error);
+				});
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const modal = document.getElementById("myModal");
+			const closeBtn = document.getElementsByClassName("close")[0];
+			const taskList = document.getElementById("taskList");
+
+			const approachingTasks = {{ approachingTasks|tojson }};
+			console.log("Modal should display:", approachingTasks.length > 0);
+
+			if (approachingTasks.length > 0) {
+				approachingTasks.forEach(task => {
+					const taskElement = `${task[1]} due ${task[3]}`;
+					const listItem = document.createElement("li");
+					listItem.textContent = taskElement;
+					taskList.appendChild(listItem);
+				});
+
+				modal.style.display = "block"; // Show the modal if there are approaching tasks
+			}
+
+			closeBtn.onclick = function() {
+				modal.style.display = "none"; // Hide the modal when close button is clicked
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none"; // Hide the modal if clicking outside of it
+				}
+			}
+		});
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
