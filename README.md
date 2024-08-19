@@ -3,7 +3,7 @@ Flask Todo app
 
 A group project done for CST8319 at Algonquin College. 
 Project Manager: Jeff J
-Lead Developer: Nick Z
+**Lead Developer: Nick Z**
 Frontend Developer: Emad S
 Backend Developer: Xuemin Z
 
