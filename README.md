@@ -2,9 +2,13 @@
 Flask Todo app
 
 A group project done for CST8319 at Algonquin College. 
+
 Project Manager: Jeff J
+
 **Lead Developer: Nick Z**
+
 Frontend Developer: Emad S
+
 Backend Developer: Xuemin Z
 
 
@@ -16,7 +20,7 @@ python (https://www.python.org/downloads/)
 flask (pip install flask) 
 
 
-Instructions:
+**Instructions:**
 
 Download zip file, extract all.
 Enter root file where you can see py files and other files.
