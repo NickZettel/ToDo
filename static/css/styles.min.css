@@ -1,0 +1,455 @@
+@font-face {
+	font-family: 'ABeeZee';
+	src: url(/assets/fonts/ABeeZee-4d5037aebfdd6601207320d04ea0ff1c.woff2?h=7c6697fb7d2c9c7ec1ab15369ef0e67a) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'ABeeZee';
+	src: url(/assets/fonts/ABeeZee-ebcf314e23b920879e1a8a43543ef1c7.woff2?h=7c6697fb7d2c9c7ec1ab15369ef0e67a) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Abril Fatface';
+	src: url(/assets/fonts/Abril%20Fatface-6d9e4af59c0147ad88068ccef086d7dd.woff2?h=4479ed5138509a4be97cdcc63967384d) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Abril Fatface';
+	src: url(/assets/fonts/Abril%20Fatface-4e63302f85b64c6c2435fab2f853cf0f.woff2?h=4479ed5138509a4be97cdcc63967384d) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Aclonica';
+	src: url(/assets/fonts/Aclonica-cabda78936749c901c09801c41b3521f.woff2?h=ea57f9b09cfe80bc5abf541b14ae14e6) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Acme';
+	src: url(/assets/fonts/Acme-39da3596ab6977a58abffb5ded27b2c9.woff2?h=bfc069cd30283b1bb333a3df17b05daf) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'ADLaM Display';
+	src: url(/assets/fonts/ADLaM%20Display-715e92f85a75061ee0fb5b8f26afe2b2.woff2?h=119eab637a7b46af38c662a9e91d3608) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+061F, U+0640, U+2015, U+201B, U+2020-2021, U+2030, U+204F, U+25CC, U+2E28-2E29, U+2E41, U+1E900-1E95F;
+}
+
+@font-face {
+	font-family: 'ADLaM Display';
+	src: url(/assets/fonts/ADLaM%20Display-581b2ec6a59a7ff319193febdbd57688.woff2?h=119eab637a7b46af38c662a9e91d3608) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'ADLaM Display';
+	src: url(/assets/fonts/ADLaM%20Display-c7b75a16d8ecdc53ed9209e0cc3cd992.woff2?h=119eab637a7b46af38c662a9e91d3608) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Akronim';
+	src: url(/assets/fonts/Akronim-e8840a19c0642ef29c227c7f7e1ed723.woff2?h=be87a5077933695c93e67deb179aeebb) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Akronim';
+	src: url(/assets/fonts/Akronim-40f2749bc94f47bdd1b2c8d4296cfafd.woff2?h=be87a5077933695c93e67deb179aeebb) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Alkatra';
+	src: url(/assets/fonts/Alkatra-f9354e767dbf102c2331cd23be03011b.woff2?h=c056f7e5526f6060ff82f9c3ca992430) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
+}
+
+@font-face {
+	font-family: 'Alkatra';
+	src: url(/assets/fonts/Alkatra-2424b815a9a7404ae8bb1da1487bfb8e.woff2?h=c056f7e5526f6060ff82f9c3ca992430) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+@font-face {
+	font-family: 'Alkatra';
+	src: url(/assets/fonts/Alkatra-f0e3e3af694cb7234c21360e21160d41.woff2?h=c056f7e5526f6060ff82f9c3ca992430) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0951-0952, U+0964-0965, U+0B01-0B77, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC;
+}
+
+@font-face {
+	font-family: 'Alkatra';
+	src: url(/assets/fonts/Alkatra-800fb0fdf01813f5110bcc3dcd301a58.woff2?h=c056f7e5526f6060ff82f9c3ca992430) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Alkatra';
+	src: url(/assets/fonts/Alkatra-a904f14f2860500aa8b020d53aaa039a.woff2?h=c056f7e5526f6060ff82f9c3ca992430) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Allan';
+	src: url(/assets/fonts/Allan-74930e9ad4e3e785f3d055bfaaecfa26.woff2?h=b146d602fc698f992bb8b9797e857648) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Allan';
+	src: url(/assets/fonts/Allan-0f15a0d2a2c24b7d8f3fcd58e66f991e.woff2?h=b146d602fc698f992bb8b9797e857648) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+	font-family: 'Allison';
+	src: url(/assets/fonts/Allison-9e8687a50a831b05ac23fe5227e7f0be.woff2?h=cf3c25422a87a9ed71f3c568513c1445) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+	font-family: 'Allison';
+	src: url(/assets/fonts/Allison-ae340cd90068d34c7b7ac6ab5a9ec1a4.woff2?h=cf3c25422a87a9ed71f3c568513c1445) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Allison';
+	src: url(/assets/fonts/Allison-8efa102f6d5e0e485d73042243ea3fe2.woff2?h=cf3c25422a87a9ed71f3c568513c1445) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}:root, [data-bs-theme=light] {
+  --bs-body-font-family: ABeeZee, sans-serif;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+#textdown {
+}
+
+#textdown.text-bg-light {
+  color: var(--bs-form-invalid-border-color);
+}
+
+.welcomepara {
+}
+
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
+
+#promo {
+  text-align: center;
+  color: var(--bs-warning-border-subtle);
+  background-color: var(--bs-body-color);
+}
+
+#sectionpromo {
+  background: #ffffff;
+}
+
+.container {
+  background-color: initial;
+}
+
+#navcol-1 {
+  background-color: var(--bs-body-bg);
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#promoout {
+}
+
+div {
+}
+
+section {
+}
+
+.btn {
+}
+
+#loginpro {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+#welcome {
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.text-bg-light {
+  margin-top: 25px;
+}
+
+#addlight {
+  background: var(--bs-purple);
+}
+
+#welcomeheader {
+  margin: 25px;
+  color: #8e8e3d;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+#headingdown {
+  margin-top: 10px;
+}
+
+#colpad {
+  padding-top: 25px;
+  background: #ffffff;
+  background: url(;
+}
+
+h3 {
+  align-content: center;
+}
+
+h3 {
+  align-content: center;
+}
+
+.h3prom {
+}
+
+#h3pro {
+  color: var(--bs-link-hover-color);
+}
+
+.btnaddcat {
+}
+
+.btnaddcat {
+}
+
+.btnaddcat {
+}
+
+input {
+}
+
+#addcat {
+  max-width: 50%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+#addcat {
+  margin-left: 25px;
+}
+
+span {
+}
+
+#inputtxtpro {
+  margin-left: 15%;
+}
+
+#butaddcat {
+  background: #8e8e3d;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 75%;
+  margin-left: 10%;
+}
+
+#addcat {
+  background: #e8e8b8;
+}
+
+p {
+}
+
+.paracat {
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  background: #ff9900;
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  background: #ff9900;
+  color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+}
+
+.btn-primary {
+  --bs-btn-color: #f19e38;
+  --bs-btn-bg: #0d6efd;
+  --bs-btn-border-color: #0d6efd;
+  --bs-btn-hover-color: #f19e38;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+#colpad {
+}
+
+a {
+}
+
+#nvpro {
+  background: #ff9900;
+}
+
+#h1bckgr {
+  color: #303438;
+}
+
+.text-center {
+  text-align: center!important;
+  color: #ff9900;
+}
+
+#contmargin {
+  margin-top: 75px;
+}
+
+.fs-5 {
+  font-family: cursive;
+  font-size: 1.5rem!important;
+}
+
+a {
+}
+
